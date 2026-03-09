@@ -16,4 +16,13 @@ public class Nota {
         this.fechaCreacion = LocalDateTime.now();
         this.fechaModificacion = LocalDateTime.now();
     }
+    public void setContenido(String contenido) {
+        this.contenido = contenido;
+        this.fechaModificacion = LocalDateTime.now();
+    }
+
+    @Override
+    public String toString() {
+        return titulo;
+    }
 }
