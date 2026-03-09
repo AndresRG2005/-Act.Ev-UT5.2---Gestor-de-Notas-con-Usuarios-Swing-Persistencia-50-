@@ -25,4 +25,20 @@ public class Nota {
     public String toString() {
         return titulo;
     }
+
+    public String getTitulo() {
+        return null;
+    }
+
+    public String getContenido() {
+        return null;
+    }
+
+    public void setTitulo(String text) {
+
+    }
+
+    public boolean getId() {
+        return false;
+    }
 }

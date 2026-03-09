@@ -29,7 +29,7 @@ public class MainFrame extends JFrame {
 
         this.usuario = usuario;
         this.notaRepo = new NotaRepository();
-        this.notas = notaRepo.cargarNotas(usuario.getUsername());
+        this.notas = notaRepo.cargarNotas((String) usuario.getUsername());
 
         setSize(800, 500);
         setLocationRelativeTo(null);
@@ -180,7 +180,7 @@ public class MainFrame extends JFrame {
     }
 
     private void guardar() {
-        notaRepo.guardarNotas(usuario.getUsername(), notas);
+        notaRepo.guardarNotas((String) usuario.getUsername(), notas);
     }
 
     private void filtrar() {
